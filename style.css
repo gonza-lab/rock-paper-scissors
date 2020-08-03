@@ -13,7 +13,8 @@ body {
 
 #board{
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
+  font-size: 1.8rem;
 }
 
 #container-rounds{
@@ -50,6 +51,13 @@ body {
   display: flex;
   width: 100%;
   max-width: 907px;
+  font-size: 1.8rem;
+}
+
+#elections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container{
@@ -60,7 +68,7 @@ body {
 }
 
 .container-image{
-  max-width: 200px;
+  max-width: 350px;
   width: 100%;
 }
 
@@ -82,6 +90,11 @@ button {
   cursor: pointer;
   border-radius: 500px;
   padding: 0.5em;
+  font-size: inherit;
+}
+
+button + button {
+  margin-left: 0.5em;
 }
 
 button:active, button:hover, button:focus{
@@ -98,7 +111,7 @@ button:active{
 }
 
 button > i {
-  font-size: 1.5rem;
+  font-size: inherit;
   color: white;
   font-weight: 100;
 }

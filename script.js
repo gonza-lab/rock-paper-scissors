@@ -26,15 +26,14 @@ function changeVisible(player, img) {
     scissor.classList.value = "visible";
   }
 
-  console.log(rock.classList.value, paper.classList.value, scissor.classList.value);
 }
 
 function playRound(playerSelection, computerSelection) {
   if (
-    (playerSelection == "scissors" && computerSelection == "paper") ||
-    (playerSelection == "rock" && computerSelection == "scissors") ||
+    (playerSelection == "scissor" && computerSelection == "paper") ||
+    (playerSelection == "rock" && computerSelection == "scissor") ||
     (playerSelection == "paper" && computerSelection == "rock")
-  ) {
+  ) { 
     return "Player";
   } else if (playerSelection == computerSelection) {
     return "Tie";
@@ -51,7 +50,7 @@ function computerPlay() {
   } else if (computerSelection == 1) {
     computerSelection = "paper";
   } else {
-    computerSelection = "scissors";
+    computerSelection = "scissor";
   }
 
   return computerSelection;
