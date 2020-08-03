@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/d26dec2499.js" crossorigin="anonymous"></script>
+    <div id="board">
+        <div id="container-rounds">
+            ROUND <p id="round">0</p>
+        </div>
+        <div id="scoreboard">
+            <div class="game-information">
+                <p id="title">WINS</p>
+                <p id="winsPlayer">0</p>
+            </div>
+            <div class="game-information">
+                <p id="title">TIES</p>
+                <p id="ties">0</p>
+            </div>
+            <div class="game-information">
+                <p id="title">WINS</p>
+                <p id="winsIA">0</p>
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="container-player" class="container">
+            <div class="container-image">
+                <img id="img-rock-player" src="https://i.ibb.co/WV9fJHw/rock.png" alt="scissor" class="visible">
+                <img id="img-paper-player" src="https://i.ibb.co/TBMmF39/paper.png" alt="scissor" class="non-visible">
+                <img id="img-scissor-player" src="https://i.ibb.co/sFkXRmJ/scissors.png" alt="scissor" class="non-visible">
+            </div>
+            <div id="elections">
+                <button id="btn-rock"><i id="btn-rock" class="far fa-hand-rock"></i></button>
+                <button id="btn-paper"><i id="btn-paper" class="far fa-hand-paper"></i></button>
+                <button id="btn-scissor"><i id="btn-scissor" class="far fa-hand-scissors"></i></button>
+            </div>
+        </div>
+        <div id="container-IA" class="container">
+            <div class="container-image ia">
+                <img id="img-rock-ia" src="https://i.ibb.co/WV9fJHw/rock.png" alt="rock" class="visible">
+                <img id="img-paper-ia" src="https://i.ibb.co/TBMmF39/paper.png" alt="paper" class="non-visible">
+                <img id="img-scissor-ia" src="https://i.ibb.co/sFkXRmJ/scissors.png" alt="scissor" class="non-visible">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
